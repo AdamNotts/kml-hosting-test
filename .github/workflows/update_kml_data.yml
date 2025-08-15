@@ -1,0 +1,49 @@
+# A descriptive name for the workflow
+name: Fetch Live KML Data
+
+# Define the triggers for this workflow
+on:
+  schedule:
+    # Runs automatically every 15 minutes using cron syntax.
+    - cron: '*/15 * * * *'
+  # Allows the workflow to be run manually from the "Actions" tab on GitHub.
+  workflow_dispatch:
+
+# Define the jobs to be executed
+jobs:
+  fetch-and-package:
+    # Use the latest version of Ubuntu Linux as the operating system for our virtual machine.
+    runs-on: ubuntu-latest
+    # Define the sequence of steps for this job.
+    steps:
+      # Step 1: Check out the repository's code onto the virtual machine.
+      # This is necessary so the workflow can access existing files and commit new ones.
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Step 2: Fetch the live KML data from the source URL using the 'curl' command.
+      # The '-o' flag specifies the output filename.
+      - name: Fetch KML data from source
+        run: curl -o live_data.kml "https://theowl.pildo.com/foreflight/foreFlightKml/adsb?token=xrrbezzrik1749035639392"
+
+      # Step 3: Package the downloaded KML into a KMZ archive using the 'zip' command.
+      - name: Create KMZ archive
+        run: zip live_data.kmz live_data.kml
+
+      # Step 4: Commit the updated KMZ file back to the repository.
+      - name: Commit and push if changed
+        run: |
+          # Configure git with a bot user identity.
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # Add the updated KMZ file to the staging area.
+          git add live_data.kmz
+          # Check if there are any staged changes.
+          # The `git diff` command exits with 0 if there are no changes.
+          if git diff --staged --quiet; then
+            echo "No changes detected. Skipping commit."
+          else
+            # If there are changes, commit and push them.
+            git commit -m "Automated KML data update"
+            git push
+          fi
