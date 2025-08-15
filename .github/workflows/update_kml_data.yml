@@ -14,19 +14,34 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Fetch and clean KML data
+      - name: Fetch, Clean, and Verify KML
         run: |
           set -euo pipefail
-          # Step 1: Download the file
+          
+          # Step 1: Install xmlstarlet, a tool for editing XML/KML files
+          echo "Installing xmlstarlet..."
+          sudo apt-get update > /dev/null
+          sudo apt-get install -y xmlstarlet > /dev/null
+          echo "Installation complete."
+
+          # Step 2: Download the KML file
+          echo "Downloading KML data..."
           curl -fL --retry 3 --retry-delay 5 --connect-timeout 15 \
             -o live_data.kml "https://theowl.pildo.com/foreflight/foreFlightKml/adsb?token=xrrbezzrik1749035639392"
-            
-          # 👇 Step 2: More robustly replace the problematic text
-          sed -i 's/Östra/Ostra/g' live_data.kml
+          
+          # Step 3: DEBUG - Show the line before we change it
+          echo "--- Content BEFORE modification ---"
+          grep "Östra" live_data.kml || echo "The string 'Östra' was not found in the original file."
+          echo "---------------------------------"
 
-          # Step 3: Basic sanity checks
-          test -s live_data.kml
-          grep -qi "<kml" live_data.kml || { echo "Downloaded file doesn't look like KML"; exit 1; }
+          # Step 4: Use xmlstarlet to find the <name> tag containing 'Östra' and update its value
+          echo "Attempting to modify the KML file with xmlstarlet..."
+          xmlstarlet ed --inplace -u "//Folder/name[contains(text(),'Östra')]" -v "ESHB - Ostra Hospital" live_data.kml
+          
+          # Step 5: DEBUG - Verify the change was made
+          echo "--- Content AFTER modification ---"
+          grep "Ostra" live_data.kml || echo "ERROR: The new string 'Ostra' was not found after modification."
+          echo "--------------------------------"
 
       - name: Create KMZ archive (fresh)
         run: |
@@ -40,7 +55,7 @@ jobs:
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add live_data.kmz live_data.kml  # Also add the KML file to see changes
+          git add live_data.kmz live_data.kml
           if git diff --staged --quiet; then
             echo "No changes detected. Skipping commit."
           else
