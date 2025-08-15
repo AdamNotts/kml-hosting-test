@@ -34,9 +34,13 @@ jobs:
             s/ style="[^"]*"//g;
             s/ style=\'[^\']*\'//g;
             
-            # Original character replacement for "Östra"
-            s/(?:\x{00D6}|O\x{0308})stra/Ostra/g;
-            s/(?:\x{00F6}|o\x{0308})stra/ostra/g;
+            # FIX: Simplified "Östra" character replacement to avoid shell parsing errors
+            s/\x{00D6}stra/Ostra/g; # Replace precomposed Östra
+            s/O\x{0308}stra/Ostra/g; # Replace O + combining diaeresis
+            s/\x{00F6}stra/ostra/g; # Replace precomposed östra
+            s/o\x{0308}stra/ostra/g; # Replace o + combining diaeresis
+            
+            # Original HTML entity replacements
             s/&Ouml;stra/Ostra/g;
             s/&ouml;stra/ostra/g;
             s/&#214;stra/Ostra/g;
