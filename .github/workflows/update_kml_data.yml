@@ -23,9 +23,18 @@ jobs:
           echo "Downloading KML data..."
           curl -fL --retry 3 --retry-delay 5 --connect-timeout 15 \
             -o live_data.kml "https://theowl.pildo.com/foreflight/foreFlightKml/adsb?token=xrrbezzrik1749035639392"
+          
           echo "Cleaning KML data..."
-          perl '-Mopen=IO,:encoding(UTF-8)' -MUnicode::Normalize=NFC -CS -i -pe '
-            $_ = NFC($_);
+          # This single perl command runs all cleaning operations
+          perl -pi -e '
+            # FIX: Remove stray "cd" text that breaks the KML schema
+            s/<key>normal<\/key>cd/<key>normal<\/key>/g;
+
+            # FIX: Strip all complex inline CSS from description HTML for better compatibility
+            s/ style="[^"]*"//g;
+            s/ style=\'[^\']*\'//g;
+            
+            # Original character replacement for "Östra"
             s/(?:\x{00D6}|O\x{0308})stra/Ostra/g;
             s/(?:\x{00F6}|o\x{0308})stra/ostra/g;
             s/&Ouml;stra/Ostra/g;
@@ -33,6 +42,8 @@ jobs:
             s/&#214;stra/Ostra/g;
             s/&#246;stra/ostra/g;
           ' live_data.kml
+
+          echo "Cleaning complete."
 
       - name: Create KMZ archive
         shell: bash
