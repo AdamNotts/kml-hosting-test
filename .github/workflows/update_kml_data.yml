@@ -32,9 +32,8 @@ jobs:
           fi
 
           echo "Normalizing Unicode and replacing all 'Östra' variants..."
-          # IMPORTANT: -Mopen=IO,:encoding(UTF-8) ensures files read via -pe are decoded as UTF-8.
-          # -CS sets UTF-8 on stdio. NFC() composes O + COMBINING DIAERESIS into Ö, so replacements match.
-          perl -Mopen=IO,:encoding(UTF-8) -MUnicode::Normalize=NFC -CS -i -pe '
+          # FIX: Quoted the first -M argument to prevent shell syntax errors.
+          perl '-Mopen=IO,:encoding(UTF-8)' -MUnicode::Normalize=NFC -CS -i -pe '
             $_ = NFC($_);
             s/(?:\x{00D6}|O\x{0308})stra/Ostra/g;   # Östra or O + COMBINING DIAERESIS
             s/(?:\x{00F6}|o\x{0308})stra/ostra/g;   # östra or o + COMBINING DIAERESIS
