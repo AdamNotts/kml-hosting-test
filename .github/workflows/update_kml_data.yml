@@ -8,6 +8,8 @@ on:
 jobs:
   fetch-and-package:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -24,7 +26,7 @@ jobs:
       - name: Create KMZ archive (fresh)
         run: |
           set -euo pipefail
-          rm -f live_data.kmz                 # <-- critical: remove any existing invalid/corrupt file
+          rm -f live_data.kmz                      # <-- critical: remove any existing invalid/corrupt file
           # -X strips extra attrs to reduce noisy diffs; -j stores just the file, -9 max compression
           zip -X -j -9 live_data.kmz live_data.kml
           # Verify the archive structure
