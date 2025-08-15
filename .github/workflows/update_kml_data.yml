@@ -2,7 +2,7 @@ name: Fetch Live KML Data
 
 on:
   schedule:
-    - cron: '*/20 * * * *'
+    - cron: '*/15 * * * *'
   workflow_dispatch:
 
 jobs:
@@ -21,8 +21,8 @@ jobs:
           curl -fL --retry 3 --retry-delay 5 --connect-timeout 15 \
             -o live_data.kml "https://theowl.pildo.com/foreflight/foreFlightKml/adsb?token=xrrbezzrik1749035639392"
             
-          # 👇 Step 2: Find and replace the problematic folder name
-          sed -i 's/ESHB - Östra Hospital/ESHB - Ostra Hospital/g' live_data.kml
+          # 👇 Step 2: More robustly replace the problematic text
+          sed -i 's/Östra/Ostra/g' live_data.kml
 
           # Step 3: Basic sanity checks
           test -s live_data.kml
@@ -40,7 +40,7 @@ jobs:
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add live_data.kmz
+          git add live_data.kmz live_data.kml  # Also add the KML file to see changes
           if git diff --staged --quiet; then
             echo "No changes detected. Skipping commit."
           else
