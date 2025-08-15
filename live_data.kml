@@ -22,7 +22,7 @@
                 </Style>
                 <StyleMap id="clusterStyle">
                   <Pair>
-                    <key>normal</key>cd 
+                    <key>normal</key> 
                     <styleUrl>#normalClusterStyle</styleUrl>
                   </Pair>
                   <Pair>
@@ -32,16 +32,16 @@
                 </StyleMap>
             
        <Folder>
-<name>ESHB - \xD6stra Hospital</name>
+<name>ESHB - Ostra Hospital</name>
  <Placemark id="adsb-cluster-PildoBox303-23457">
-      <name>ESHB - \xD6stra Hospital, from 24-07-2025 15:58:17</name>
+      <name>ESHB - Ostra Hospital, from 24-07-2025 15:58:17</name>
       <styleUrl>#clusterStyle</styleUrl>
       <description>  <![CDATA[
-     <div style="width: 100%; background-color: whitesmoke; box-sizing: border-box; padding: 0.75rem 1rem 0.5rem 1rem">           <div style="width:100%; margin:0 0rem 0.5rem 0rem; border-bottom: 1px solid darkgray; line-height:26px; font-size:14px; overflow: hidden;"><div style='float: left; text-align: left; font-weight: 400;' >Flights</div> <div style='text-align: right;float: right;'>37</div></div>
-           <div style="width:100%; margin:0 0rem 0.5rem 0rem; border-bottom: 1px solid darkgray; line-height:26px; font-size:14px; overflow: hidden;"><div style='float: left; text-align: left; font-weight: 400;' >Flights with anomalies</div> <div style='text-align: right; float: right;'>3</div></div>
-           <div style="width:100%; margin:0 0rem 0.5rem 0rem; border-bottom: 1px solid darkgray; line-height:26px; font-size:14px; overflow: hidden;"><div style='float: left; text-align: left; font-weight: 400;' >Anomalies</div> <div style='text-align: right; float: right;'>222 </div></div>
-           <div style="width:100%; margin:0 0rem 0.5rem 0rem; border-bottom: 1px solid darkgray; line-height:26px; font-size:14px; overflow: hidden;"><div style='float: left; text-align: left; font-weight: 400;' >Percentage of anomalies</div> <div style='text-align: right; float: right;'> 6.36 %</div></div>
-           <div style="width:100%; margin:0 0rem 0rem 0rem; border-bottom: 1px solid darkgray; border-bottom: 1px solid darkgray; line-height:26px; font-size:14px; overflow: hidden;"><div style='float: left; text-align: left; font-weight: 400;' >Start time</div> <div style='text-align: right; float: right;'>24-07-2025 15:58:17 (UTC)</div></div>
+     <div>           <div><div >Flights</div> <div>37</div></div>
+           <div><div >Flights with anomalies</div> <div>3</div></div>
+           <div><div >Anomalies</div> <div>222 </div></div>
+           <div><div >Percentage of anomalies</div> <div> 6.36 %</div></div>
+           <div><div >Start time</div> <div>24-07-2025 15:58:17 (UTC)</div></div>
        </div>
 ]]></description>
       <Polygon>
@@ -54,14 +54,14 @@
       </Polygon>
     </Placemark>
  <Placemark id="adsb-cluster-PildoBox303-23458">
-      <name>ESHB - \xD6stra Hospital, from 24-07-2025 16:03:04</name>
+      <name>ESHB - Ostra Hospital, from 24-07-2025 16:03:04</name>
       <styleUrl>#clusterStyle</styleUrl>
       <description>  <![CDATA[
-     <div style="width: 100%; background-color: whitesmoke; box-sizing: border-box; padding: 0.75rem 1rem 0.5rem 1rem">           <div style="width:100%; margin:0 0rem 0.5rem 0rem; border-bottom: 1px solid darkgray; line-height:26px; font-size:14px; overflow: hidden;"><div style='float: left; text-align: left; font-weight: 400;' >Flights</div> <div style='text-align: right;float: right;'>45</div></div>
-           <div style="width:100%; margin:0 0rem 0.5rem 0rem; border-bottom: 1px solid darkgray; line-height:26px; font-size:14px; overflow: hidden;"><div style='float: left; text-align: left; font-weight: 400;' >Flights with anomalies</div> <div style='text-align: right; float: right;'>2</div></div>
-           <div style="width:100%; margin:0 0rem 0.5rem 0rem; border-bottom: 1px solid darkgray; line-height:26px; font-size:14px; overflow: hidden;"><div style='float: left; text-align: left; font-weight: 400;' >Anomalies</div> <div style='text-align: right; float: right;'>264 </div></div>
-           <div style="width:100%; margin:0 0rem 0.5rem 0rem; border-bottom: 1px solid darkgray; line-height:26px; font-size:14px; overflow: hidden;"><div style='float: left; text-align: left; font-weight: 400;' >Percentage of anomalies</div> <div style='text-align: right; float: right;'> 5.70 %</div></div>
-           <div style="width:100%; margin:0 0rem 0rem 0rem; border-bottom: 1px solid darkgray; border-bottom: 1px solid darkgray; line-height:26px; font-size:14px; overflow: hidden;"><div style='float: left; text-align: left; font-weight: 400;' >Start time</div> <div style='text-align: right; float: right;'>24-07-2025 16:03:04 (UTC)</div></div>
+     <div>           <div><div >Flights</div> <div>45</div></div>
+           <div><div >Flights with anomalies</div> <div>2</div></div>
+           <div><div >Anomalies</div> <div>264 </div></div>
+           <div><div >Percentage of anomalies</div> <div> 5.70 %</div></div>
+           <div><div >Start time</div> <div>24-07-2025 16:03:04 (UTC)</div></div>
        </div>
 ]]></description>
       <Polygon>
@@ -74,14 +74,14 @@
       </Polygon>
     </Placemark>
  <Placemark id="adsb-cluster-PildoBox303-23459">
-      <name>ESHB - \xD6stra Hospital, from 24-07-2025 16:07:49</name>
+      <name>ESHB - Ostra Hospital, from 24-07-2025 16:07:49</name>
       <styleUrl>#clusterStyle</styleUrl>
       <description>  <![CDATA[
-     <div style="width: 100%; background-color: whitesmoke; box-sizing: border-box; padding: 0.75rem 1rem 0.5rem 1rem">           <div style="width:100%; margin:0 0rem 0.5rem 0rem; border-bottom: 1px solid darkgray; line-height:26px; font-size:14px; overflow: hidden;"><div style='float: left; text-align: left; font-weight: 400;' >Flights</div> <div style='text-align: right;float: right;'>49</div></div>
-           <div style="width:100%; margin:0 0rem 0.5rem 0rem; border-bottom: 1px solid darkgray; line-height:26px; font-size:14px; overflow: hidden;"><div style='float: left; text-align: left; font-weight: 400;' >Flights with anomalies</div> <div style='text-align: right; float: right;'>2</div></div>
-           <div style="width:100%; margin:0 0rem 0.5rem 0rem; border-bottom: 1px solid darkgray; line-height:26px; font-size:14px; overflow: hidden;"><div style='float: left; text-align: left; font-weight: 400;' >Anomalies</div> <div style='text-align: right; float: right;'>202 </div></div>
-           <div style="width:100%; margin:0 0rem 0.5rem 0rem; border-bottom: 1px solid darkgray; line-height:26px; font-size:14px; overflow: hidden;"><div style='float: left; text-align: left; font-weight: 400;' >Percentage of anomalies</div> <div style='text-align: right; float: right;'> 4.59 %</div></div>
-           <div style="width:100%; margin:0 0rem 0rem 0rem; border-bottom: 1px solid darkgray; border-bottom: 1px solid darkgray; line-height:26px; font-size:14px; overflow: hidden;"><div style='float: left; text-align: left; font-weight: 400;' >Start time</div> <div style='text-align: right; float: right;'>24-07-2025 16:07:49 (UTC)</div></div>
+     <div>           <div><div >Flights</div> <div>49</div></div>
+           <div><div >Flights with anomalies</div> <div>2</div></div>
+           <div><div >Anomalies</div> <div>202 </div></div>
+           <div><div >Percentage of anomalies</div> <div> 4.59 %</div></div>
+           <div><div >Start time</div> <div>24-07-2025 16:07:49 (UTC)</div></div>
        </div>
 ]]></description>
       <Polygon>
@@ -94,14 +94,14 @@
       </Polygon>
     </Placemark>
  <Placemark id="adsb-cluster-PildoBox303-23461">
-      <name>ESHB - \xD6stra Hospital, from 24-07-2025 16:12:25</name>
+      <name>ESHB - Ostra Hospital, from 24-07-2025 16:12:25</name>
       <styleUrl>#clusterStyle</styleUrl>
       <description>  <![CDATA[
-     <div style="width: 100%; background-color: whitesmoke; box-sizing: border-box; padding: 0.75rem 1rem 0.5rem 1rem">           <div style="width:100%; margin:0 0rem 0.5rem 0rem; border-bottom: 1px solid darkgray; line-height:26px; font-size:14px; overflow: hidden;"><div style='float: left; text-align: left; font-weight: 400;' >Flights</div> <div style='text-align: right;float: right;'>20</div></div>
-           <div style="width:100%; margin:0 0rem 0.5rem 0rem; border-bottom: 1px solid darkgray; line-height:26px; font-size:14px; overflow: hidden;"><div style='float: left; text-align: left; font-weight: 400;' >Flights with anomalies</div> <div style='text-align: right; float: right;'>2</div></div>
-           <div style="width:100%; margin:0 0rem 0.5rem 0rem; border-bottom: 1px solid darkgray; line-height:26px; font-size:14px; overflow: hidden;"><div style='float: left; text-align: left; font-weight: 400;' >Anomalies</div> <div style='text-align: right; float: right;'>30 </div></div>
-           <div style="width:100%; margin:0 0rem 0.5rem 0rem; border-bottom: 1px solid darkgray; line-height:26px; font-size:14px; overflow: hidden;"><div style='float: left; text-align: left; font-weight: 400;' >Percentage of anomalies</div> <div style='text-align: right; float: right;'> 4.24 %</div></div>
-           <div style="width:100%; margin:0 0rem 0rem 0rem; border-bottom: 1px solid darkgray; border-bottom: 1px solid darkgray; line-height:26px; font-size:14px; overflow: hidden;"><div style='float: left; text-align: left; font-weight: 400;' >Start time</div> <div style='text-align: right; float: right;'>24-07-2025 16:12:25 (UTC)</div></div>
+     <div>           <div><div >Flights</div> <div>20</div></div>
+           <div><div >Flights with anomalies</div> <div>2</div></div>
+           <div><div >Anomalies</div> <div>30 </div></div>
+           <div><div >Percentage of anomalies</div> <div> 4.24 %</div></div>
+           <div><div >Start time</div> <div>24-07-2025 16:12:25 (UTC)</div></div>
        </div>
 ]]></description>
       <Polygon>
@@ -114,14 +114,14 @@
       </Polygon>
     </Placemark>
  <Placemark id="adsb-cluster-PildoBox303-23463">
-      <name>ESHB - \xD6stra Hospital, from 24-07-2025 16:20:22</name>
+      <name>ESHB - Ostra Hospital, from 24-07-2025 16:20:22</name>
       <styleUrl>#clusterStyle</styleUrl>
       <description>  <![CDATA[
-     <div style="width: 100%; background-color: whitesmoke; box-sizing: border-box; padding: 0.75rem 1rem 0.5rem 1rem">           <div style="width:100%; margin:0 0rem 0.5rem 0rem; border-bottom: 1px solid darkgray; line-height:26px; font-size:14px; overflow: hidden;"><div style='float: left; text-align: left; font-weight: 400;' >Flights</div> <div style='text-align: right;float: right;'>13</div></div>
-           <div style="width:100%; margin:0 0rem 0.5rem 0rem; border-bottom: 1px solid darkgray; line-height:26px; font-size:14px; overflow: hidden;"><div style='float: left; text-align: left; font-weight: 400;' >Flights with anomalies</div> <div style='text-align: right; float: right;'>2</div></div>
-           <div style="width:100%; margin:0 0rem 0.5rem 0rem; border-bottom: 1px solid darkgray; line-height:26px; font-size:14px; overflow: hidden;"><div style='float: left; text-align: left; font-weight: 400;' >Anomalies</div> <div style='text-align: right; float: right;'>6 </div></div>
-           <div style="width:100%; margin:0 0rem 0.5rem 0rem; border-bottom: 1px solid darkgray; line-height:26px; font-size:14px; overflow: hidden;"><div style='float: left; text-align: left; font-weight: 400;' >Percentage of anomalies</div> <div style='text-align: right; float: right;'> 4.72 %</div></div>
-           <div style="width:100%; margin:0 0rem 0rem 0rem; border-bottom: 1px solid darkgray; border-bottom: 1px solid darkgray; line-height:26px; font-size:14px; overflow: hidden;"><div style='float: left; text-align: left; font-weight: 400;' >Start time</div> <div style='text-align: right; float: right;'>24-07-2025 16:20:22 (UTC)</div></div>
+     <div>           <div><div >Flights</div> <div>13</div></div>
+           <div><div >Flights with anomalies</div> <div>2</div></div>
+           <div><div >Anomalies</div> <div>6 </div></div>
+           <div><div >Percentage of anomalies</div> <div> 4.72 %</div></div>
+           <div><div >Start time</div> <div>24-07-2025 16:20:22 (UTC)</div></div>
        </div>
 ]]></description>
       <Polygon>
