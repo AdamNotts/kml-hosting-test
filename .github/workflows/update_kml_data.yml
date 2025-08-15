@@ -30,6 +30,9 @@ jobs:
 
           # Use perl -p to read the input file and print the modified content to the temp file
           perl -p -e '
+            # NEW: Flatten KML by removing all Folder tags
+            s/<\/?Folder.*?>//g;
+
             # FIX: Remove stray "cd" text that breaks the KML schema
             s/<key>normal<\/key>cd/<key>normal<\/key>/g;
 
