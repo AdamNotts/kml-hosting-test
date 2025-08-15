@@ -18,7 +18,7 @@ jobs:
         run: |
           set -euo pipefail
           
-          # Step 1: Install xmlstarlet, a tool for editing XML/KML files
+          # Step 1: Install xmlstarlet
           echo "Installing xmlstarlet..."
           sudo apt-get update > /dev/null
           sudo apt-get install -y xmlstarlet > /dev/null
@@ -29,16 +29,21 @@ jobs:
           curl -fL --retry 3 --retry-delay 5 --connect-timeout 15 \
             -o live_data.kml "https://theowl.pildo.com/foreflight/foreFlightKml/adsb?token=xrrbezzrik1749035639392"
           
-          # Step 3: DEBUG - Show the line before we change it
+          # 👇 Step 3: FIX - Convert the file from ISO-8859-1 to UTF-8
+          echo "Converting file encoding to UTF-8..."
+          iconv -f ISO-8859-1 -t UTF-8 -o live_data_utf8.kml live_data.kml
+          mv live_data_utf8.kml live_data.kml
+          
+          # Step 4: DEBUG - Show the line before we change it
           echo "--- Content BEFORE modification ---"
           grep "Östra" live_data.kml || echo "The string 'Östra' was not found in the original file."
           echo "---------------------------------"
 
-          # Step 4: Use xmlstarlet to find the <name> tag containing 'Östra' and update its value
+          # Step 5: Use xmlstarlet to find the <name> tag and update its value
           echo "Attempting to modify the KML file with xmlstarlet..."
           xmlstarlet ed --inplace -u "//Folder/name[contains(text(),'Östra')]" -v "ESHB - Ostra Hospital" live_data.kml
           
-          # Step 5: DEBUG - Verify the change was made
+          # Step 6: DEBUG - Verify the change was made
           echo "--- Content AFTER modification ---"
           grep "Ostra" live_data.kml || echo "ERROR: The new string 'Ostra' was not found after modification."
           echo "--------------------------------"
@@ -55,7 +60,7 @@ jobs:
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add live_data.kmz live_data.kml
+          git add live_data.kmz
           if git diff --staged --quiet; then
             echo "No changes detected. Skipping commit."
           else
