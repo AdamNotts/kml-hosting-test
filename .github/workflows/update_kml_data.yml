@@ -27,8 +27,12 @@ jobs:
         run: curl -o live_data.kml "https://theowl.pildo.com/foreflight/foreFlightKml/adsb?token=xrrbezzrik1749035639392"
 
       # Step 3: Package the downloaded KML into a KMZ archive using the 'zip' command.
+      # We remove the old archive first to prevent errors from updating a potentially
+      # malformed file from a previous run.
       - name: Create KMZ archive
-        run: zip live_data.kmz live_data.kml
+        run: |
+          rm -f live_data.kmz
+          zip live_data.kmz live_data.kml
 
       # Step 4: Commit the updated KMZ file back to the repository.
       - name: Commit and push if changed
