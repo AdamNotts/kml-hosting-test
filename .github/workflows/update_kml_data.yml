@@ -14,22 +14,25 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Fetch KML data from source
+      - name: Fetch and clean KML data
         run: |
           set -euo pipefail
+          # Step 1: Download the file
           curl -fL --retry 3 --retry-delay 5 --connect-timeout 15 \
             -o live_data.kml "https://theowl.pildo.com/foreflight/foreFlightKml/adsb?token=xrrbezzrik1749035639392"
-          # Basic sanity checks: non-empty and looks like KML
+            
+          # 👇 Step 2: Find and replace the problematic folder name
+          sed -i 's/ESHB - Östra Hospital/ESHB - Ostra Hospital/g' live_data.kml
+
+          # Step 3: Basic sanity checks
           test -s live_data.kml
           grep -qi "<kml" live_data.kml || { echo "Downloaded file doesn't look like KML"; exit 1; }
 
       - name: Create KMZ archive (fresh)
         run: |
           set -euo pipefail
-          rm -f live_data.kmz                      # <-- critical: remove any existing invalid/corrupt file
-          # -X strips extra attrs to reduce noisy diffs; -j stores just the file, -9 max compression
+          rm -f live_data.kmz
           zip -X -j -9 live_data.kmz live_data.kml
-          # Verify the archive structure
           zip -T live_data.kmz
 
       - name: Commit and push if changed
