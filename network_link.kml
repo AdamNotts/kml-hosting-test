@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <NetworkLink>
+      <name>Live Aircraft Data Feed</name>
+      <Link>
+        <href>https://adamnotts.github.io/kml-hosting-test/live_data.kmz</href>
+        <refreshMode>onInterval</refreshMode>
+        <refreshInterval>60</refreshInterval>
+      </Link>
+    </NetworkLink>
+  </Document>
+</kml>
