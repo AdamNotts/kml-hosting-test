@@ -20,43 +20,21 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-
           echo "Downloading KML data..."
           curl -fL --retry 3 --retry-delay 5 --connect-timeout 15 \
             -o live_data.kml "https://theowl.pildo.com/foreflight/foreFlightKml/adsb?token=xrrbezzrik1749035639392"
-
-          echo "Ensuring UTF-8 encoding (best-effort)..."
-          # If it's already UTF-8, iconv may fail; that's okay—we keep the original.
-          if iconv -f ISO-8859-1 -t UTF-8 -o live_data_utf8.kml live_data.kml 2>/dev/null; then
-            mv live_data_utf8.kml live_data.kml
-          fi
-
-          echo "Normalizing Unicode and replacing all 'Östra' variants..."
-          # FIX: Quoted the first -M argument to prevent shell syntax errors.
+          echo "Cleaning KML data..."
           perl '-Mopen=IO,:encoding(UTF-8)' -MUnicode::Normalize=NFC -CS -i -pe '
             $_ = NFC($_);
-            s/(?:\x{00D6}|O\x{0308})stra/Ostra/g;   # Östra or O + COMBINING DIAERESIS
-            s/(?:\x{00F6}|o\x{0308})stra/ostra/g;   # östra or o + COMBINING DIAERESIS
-          ' live_data.kml
-
-          # Also handle common HTML/numeric entities just in case.
-          perl -CS -i -pe '
+            s/(?:\x{00D6}|O\x{0308})stra/Ostra/g;
+            s/(?:\x{00F6}|o\x{0308})stra/ostra/g;
             s/&Ouml;stra/Ostra/g;
             s/&ouml;stra/ostra/g;
             s/&#214;stra/Ostra/g;
             s/&#246;stra/ostra/g;
           ' live_data.kml
 
-          echo "Verifying replacements..."
-          if grep -Pq '(\x{00D6}stra|O\x{0308}stra|&Ouml;stra|&#214;stra|\x{00F6}stra|o\x{0308}stra|&ouml;stra|&#246;stra)' live_data.kml; then
-            echo "ERROR: Some 'Östra' variants remain:"
-            grep -Pn '(\x{00D6}stra|O\x{0308}stra|&Ouml;stra|&#214;stra|\x{00F6}stra|o\x{0308}stra|&ouml;stra|&#246;stra)' live_data.kml | head -n 20
-            exit 1
-          else
-            echo "Success: All variants replaced. 'ESHB - Ostra Hospital' should render correctly."
-          fi
-
-      - name: Create KMZ archive (fresh)
+      - name: Create KMZ archive
         shell: bash
         run: |
           set -euo pipefail
@@ -64,13 +42,36 @@ jobs:
           zip -j -X -9 live_data.kmz live_data.kml
           zip -T live_data.kmz
 
-      - name: Commit and push if changed
+      - name: Create NetworkLink KML File
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat > network_link.kml <<EOF
+          <?xml version="1.0" encoding="UTF-8"?>
+          <kml xmlns="http://www.opengis.net/kml/2.2">
+            <NetworkLink>
+              <name>Live Helicopter Data</name>
+              <Link>
+                <href>https://raw.githubusercontent.com/AdamNotts/kml-hosting-test/main/live_data.kml?v=${{ github.run_id }}</href>
+                <refreshMode>onInterval</refreshMode>
+                <refreshInterval>300</refreshInterval>
+              </Link>
+            </NetworkLink>
+          </kml>
+          EOF
+
+      - name: Commit and push changes
         shell: bash
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          
+          # Add all three files to be committed
+          git add live_data.kml
           git add live_data.kmz
+          git add network_link.kml
+          
           if git diff --staged --quiet; then
             echo "No changes detected. Skipping commit."
           else
