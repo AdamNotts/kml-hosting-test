@@ -14,45 +14,39 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Fetch, Clean, and Verify KML
+      - name: Fetch and Clean KML
         run: |
           set -euo pipefail
           
-          # Step 1: Install xmlstarlet
-          echo "Installing xmlstarlet..."
-          sudo apt-get update > /dev/null
-          sudo apt-get install -y xmlstarlet > /dev/null
-          echo "Installation complete."
-
-          # Step 2: Download the KML file
+          # Step 1: Download the KML file
           echo "Downloading KML data..."
           curl -fL --retry 3 --retry-delay 5 --connect-timeout 15 \
             -o live_data.kml "https://theowl.pildo.com/foreflight/foreFlightKml/adsb?token=xrrbezzrik1749035639392"
           
-          # 👇 Step 3: FIX - Convert the file from ISO-8859-1 to UTF-8
+          # Step 2: Convert the file's encoding from ISO-8859-1 to UTF-8
           echo "Converting file encoding to UTF-8..."
           iconv -f ISO-8859-1 -t UTF-8 -o live_data_utf8.kml live_data.kml
           mv live_data_utf8.kml live_data.kml
           
-          # Step 4: DEBUG - Show the line before we change it
-          echo "--- Content BEFORE modification ---"
-          grep "Östra" live_data.kml || echo "The string 'Östra' was not found in the original file."
-          echo "---------------------------------"
-
-          # Step 5: Use xmlstarlet to find the <name> tag and update its value
-          echo "Attempting to modify the KML file with xmlstarlet..."
-          xmlstarlet ed --inplace -u "//Folder/name[contains(text(),'Östra')]" -v "ESHB - Ostra Hospital" live_data.kml
+          # Step 3: Globally replace all instances of 'Östra' with 'Ostra'
+          echo "Performing global text replacement..."
+          sed -i 's/Östra/Ostra/g' live_data.kml
           
-          # Step 6: DEBUG - Verify the change was made
-          echo "--- Content AFTER modification ---"
-          grep "Ostra" live_data.kml || echo "ERROR: The new string 'Ostra' was not found after modification."
-          echo "--------------------------------"
+          # Step 4: Verify the change was made (optional but good practice)
+          echo "Verifying changes..."
+          if grep -q "Ostra" live_data.kml; then
+            echo "Success: 'Ostra' was found in the modified file."
+          else
+            echo "ERROR: Could not find 'Ostra' after replacement."
+            exit 1
+          fi
 
       - name: Create KMZ archive (fresh)
         run: |
           set -euo pipefail
           rm -f live_data.kmz
-          zip -X -j -9 live_data.kmz live_data.kml
+          # The -j flag junks paths, storing only the filename inside the zip
+          zip -j -X -9 live_data.kmz live_data.kml
           zip -T live_data.kmz
 
       - name: Commit and push if changed
