@@ -31,7 +31,7 @@
                   </Pair>
                 </StyleMap>
             
-       <Folder>
+       
 <name>ESHB - Ostra Hospital</name>
  <Placemark id="adsb-cluster-PildoBox303-23457">
       <name>ESHB - Ostra Hospital, from 24-07-2025 15:58:17</name>
@@ -133,5 +133,5 @@
         </outerBoundaryIs>
       </Polygon>
     </Placemark>
-</Folder>  </Document>
+  </Document>
 </kml>
