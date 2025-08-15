@@ -25,14 +25,17 @@ jobs:
             -o live_data.kml "https://theowl.pildo.com/foreflight/foreFlightKml/adsb?token=xrrbezzrik1749035639392"
           
           echo "Cleaning KML data..."
-          # This single perl command runs all cleaning operations
-          perl -pi -e '
+          # Create a temporary file to hold the cleaned output
+          TMP_KML=$(mktemp)
+
+          # Use perl -p to read the input file and print the modified content to the temp file
+          perl -p -e '
             # FIX: Remove stray "cd" text that breaks the KML schema
             s/<key>normal<\/key>cd/<key>normal<\/key>/g;
 
             # FIX: Strip all complex inline CSS from description HTML for better compatibility
             s/ style="[^"]*"//g;
-            s/ style=\'[^\']*\'//g;
+            s/ style=\x27[^\x27]*\x27//g;
             
             # FIX: Simplified "Östra" character replacement to avoid shell parsing errors
             s/\x{00D6}stra/Ostra/g; # Replace precomposed Östra
@@ -45,7 +48,10 @@ jobs:
             s/&ouml;stra/ostra/g;
             s/&#214;stra/Ostra/g;
             s/&#246;stra/ostra/g;
-          ' live_data.kml
+          ' live_data.kml > "$TMP_KML"
+
+          # Replace the original file with the cleaned version
+          mv "$TMP_KML" live_data.kml
 
           echo "Cleaning complete."
 
