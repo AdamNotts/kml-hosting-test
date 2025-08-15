@@ -1,53 +1,44 @@
-# A descriptive name for the workflow
 name: Fetch Live KML Data
 
-# Define the triggers for this workflow
 on:
   schedule:
-    # Runs automatically every 15 minutes using cron syntax.
     - cron: '*/15 * * * *'
-  # Allows the workflow to be run manually from the "Actions" tab on GitHub.
   workflow_dispatch:
 
-# Define the jobs to be executed
 jobs:
   fetch-and-package:
-    # Use the latest version of Ubuntu Linux as the operating system for our virtual machine.
     runs-on: ubuntu-latest
-    # Define the sequence of steps for this job.
     steps:
-      # Step 1: Check out the repository's code onto the virtual machine.
-      # This is necessary so the workflow can access existing files and commit new ones.
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # Step 2: Fetch the live KML data from the source URL using the 'curl' command.
-      # The '-o' flag specifies the output filename.
       - name: Fetch KML data from source
-        run: curl -o live_data.kml "https://theowl.pildo.com/foreflight/foreFlightKml/adsb?token=xrrbezzrik1749035639392"
-
-      # Step 3: Package the downloaded KML into a KMZ archive using the 'zip' command.
-      # We remove the old archive first to prevent errors from updating a potentially
-      # malformed file from a previous run.
-      - name: Create KMZ archive
         run: |
-          rm -f live_data.kmz
-          zip live_data.kmz live_data.kml
+          set -euo pipefail
+          curl -fL --retry 3 --retry-delay 5 --connect-timeout 15 \
+            -o live_data.kml "https://theowl.pildo.com/foreflight/foreFlightKml/adsb?token=xrrbezzrik1749035639392"
+          # Basic sanity checks: non-empty and looks like KML
+          test -s live_data.kml
+          grep -qi "<kml" live_data.kml || { echo "Downloaded file doesn't look like KML"; exit 1; }
 
-      # Step 4: Commit the updated KMZ file back to the repository.
+      - name: Create KMZ archive (fresh)
+        run: |
+          set -euo pipefail
+          rm -f live_data.kmz                 # <-- critical: remove any existing invalid/corrupt file
+          # -X strips extra attrs to reduce noisy diffs; -j stores just the file, -9 max compression
+          zip -X -j -9 live_data.kmz live_data.kml
+          # Verify the archive structure
+          zip -T live_data.kmz
+
       - name: Commit and push if changed
         run: |
-          # Configure git with a bot user identity.
+          set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          # Add the updated KMZ file to the staging area.
           git add live_data.kmz
-          # Check if there are any staged changes.
-          # The `git diff` command exits with 0 if there are no changes.
           if git diff --staged --quiet; then
             echo "No changes detected. Skipping commit."
           else
-            # If there are changes, commit and push them.
             git commit -m "Automated KML data update"
             git push
           fi
