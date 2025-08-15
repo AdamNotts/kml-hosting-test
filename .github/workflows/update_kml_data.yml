@@ -12,59 +12,45 @@ jobs:
       contents: write
     steps:
       - name: Checkout repository
+      # Always check out with full history so git diff works as expected
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Fetch and Clean KML
         shell: bash
         run: |
           set -euo pipefail
-          
+
           echo "Downloading KML data..."
           curl -fL --retry 3 --retry-delay 5 --connect-timeout 15 \
             -o live_data.kml "https://theowl.pildo.com/foreflight/foreFlightKml/adsb?token=xrrbezzrik1749035639392"
 
-          echo "Ensuring UTF-8..."
-          # If the source is already UTF-8, iconv will fail; that's fine—we'll keep the original.
+          echo "Ensuring UTF-8 encoding (best-effort)..."
+          # If it's already UTF-8, iconv will fail; that's okay—we keep the original.
           if iconv -f ISO-8859-1 -t UTF-8 -o live_data_utf8.kml live_data.kml 2>/dev/null; then
             mv live_data_utf8.kml live_data.kml
-          else
-            echo "iconv not needed or failed; proceeding with the original file."
           fi
 
           echo "Normalizing Unicode and replacing all 'Östra' variants..."
-          python3 - <<'PY'
-import io, unicodedata
-p = "live_data.kml"
-with io.open(p, "r", encoding="utf-8", errors="strict") as f:
-    s = f.read()
+          # Perl core has Unicode::Normalize; -CS enables UTF-8 on STDIN/STDOUT/STDERR
+          perl -MUnicode::Normalize -CS -i -pe '
+            $_ = NFC($_);
+            s/\x{00D6}stra|O\x{0308}stra/Ostra/g;  # Östra or O + COMBINING DIAERESIS
+            s/\x{00F6}stra|o\x{0308}stra/ostra/g;  # östra or o + COMBINING DIAERESIS
+            s/&Ouml;stra/Ostra/g;
+            s/&ouml;stra/ostra/g;
+            s/&#214;stra/Ostra/g;  # decimal entity for Ö
+            s/&#246;stra/ostra/g;  # decimal entity for ö
+          ' live_data.kml
 
-# Normalize to NFC so decomposed sequences like "O" + COMBINING DIAERESIS
-# become the precomposed "Ö", ensuring replacements match.
-s = unicodedata.normalize("NFC", s)
-
-# Replace all likely spellings/entities of Ö/ö in 'Östra'
-s = (s
-     .replace("Östra", "Ostra")
-     .replace("östra", "ostra")
-     .replace("Östra", "Ostra")   # in case normalization didn't catch something
-     .replace("östra", "ostra")
-     .replace("&Ouml;stra", "Ostra")
-     .replace("&ouml;stra", "ostra")
-     .replace("&#214;stra", "Ostra")
-     .replace("&#246;stra", "ostra")
-)
-
-with io.open(p, "w", encoding="utf-8", newline="") as f:
-    f.write(s)
-PY
-
-          echo "Verifying replacement..."
-          if grep -Pq '(?:Östra|O\x{0308}stra|&Ouml;stra|&#214;stra|östra|o\x{0308}stra|&ouml;stra|&#246;stra)' live_data.kml; then
+          echo "Verifying replacements..."
+          if grep -Pq '(\x{00D6}stra|O\x{0308}stra|&Ouml;stra|&#214;stra|\x{00F6}stra|o\x{0308}stra|&ouml;stra|&#246;stra)' live_data.kml; then
             echo "ERROR: Some 'Östra' variants remain:"
-            grep -Pn '(?:Östra|O\x{0308}stra|&Ouml;stra|&#214;stra|östra|o\x{0308}stra|&ouml;stra|&#246;stra)' live_data.kml | head -n 20
+            grep -Pn '(\x{00D6}stra|O\x{0308}stra|&Ouml;stra|&#214;stra|\x{00F6}stra|o\x{0308}stra|&ouml;stra|&#246;stra)' live_data.kml | head -n 20
             exit 1
           else
-            echo "Success: All 'Östra' variants replaced with 'Ostra'."
+            echo "Success: All variants replaced. 'ESHB - Ostra Hospital' should render correctly."
           fi
 
       - name: Create KMZ archive (fresh)
@@ -72,7 +58,7 @@ PY
         run: |
           set -euo pipefail
           rm -f live_data.kmz
-          # -j junks paths so only the filename is stored
+          # -j junks paths; -X strips extra file attributes; -9 maximum compression
           zip -j -X -9 live_data.kmz live_data.kml
           zip -T live_data.kmz
 
