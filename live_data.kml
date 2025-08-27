@@ -37,10 +37,10 @@
       <name>ESHB - Ostra Hospital, from 27-08-2025 15:05:07</name>
       <styleUrl>#clusterStyle</styleUrl>
       <description>  <![CDATA[
-     <div>           <div><div >Flights</div> <div>74</div></div>
+     <div>           <div><div >Flights</div> <div>76</div></div>
            <div><div >Flights with anomalies</div> <div>6</div></div>
            <div><div >Anomalies</div> <div>397 </div></div>
-           <div><div >Percentage of anomalies</div> <div> 4.63 %</div></div>
+           <div><div >Percentage of anomalies</div> <div> 4.41 %</div></div>
            <div><div >Start time</div> <div>27-08-2025 15:05:07 (UTC)</div></div>
        </div>
 ]]></description>
@@ -57,10 +57,10 @@
       <name>ESHB - Ostra Hospital, from 27-08-2025 15:01:51</name>
       <styleUrl>#clusterStyle</styleUrl>
       <description>  <![CDATA[
-     <div>           <div><div >Flights</div> <div>70</div></div>
+     <div>           <div><div >Flights</div> <div>71</div></div>
            <div><div >Flights with anomalies</div> <div>9</div></div>
            <div><div >Anomalies</div> <div>636 </div></div>
-           <div><div >Percentage of anomalies</div> <div> 7.35 %</div></div>
+           <div><div >Percentage of anomalies</div> <div> 7.29 %</div></div>
            <div><div >Start time</div> <div>27-08-2025 15:01:51 (UTC)</div></div>
        </div>
 ]]></description>
@@ -297,10 +297,10 @@
       <name>ESHB - Ostra Hospital, from 27-08-2025 21:04:12</name>
       <styleUrl>#clusterStyle</styleUrl>
       <description>  <![CDATA[
-     <div>           <div><div >Flights</div> <div>10</div></div>
+     <div>           <div><div >Flights</div> <div>11</div></div>
            <div><div >Flights with anomalies</div> <div>2</div></div>
            <div><div >Anomalies</div> <div>90 </div></div>
-           <div><div >Percentage of anomalies</div> <div> 12.89 %</div></div>
+           <div><div >Percentage of anomalies</div> <div> 12.82 %</div></div>
            <div><div >Start time</div> <div>27-08-2025 21:04:12 (UTC)</div></div>
        </div>
 ]]></description>
