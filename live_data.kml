@@ -37,10 +37,10 @@
       <name>ESHB - Ostra Hospital, from 28-08-2025 03:20:05</name>
       <styleUrl>#clusterStyle</styleUrl>
       <description>  <![CDATA[
-     <div>           <div><div >Flights</div> <div>90</div></div>
+     <div>           <div><div >Flights</div> <div>92</div></div>
            <div><div >Flights with anomalies</div> <div>2</div></div>
            <div><div >Anomalies</div> <div>283 </div></div>
-           <div><div >Percentage of anomalies</div> <div> 4.53 %</div></div>
+           <div><div >Percentage of anomalies</div> <div> 4.43 %</div></div>
            <div><div >Start time</div> <div>28-08-2025 03:20:05 (UTC)</div></div>
        </div>
 ]]></description>
@@ -77,10 +77,10 @@
       <name>ESHB - Ostra Hospital, from 28-08-2025 03:25:04</name>
       <styleUrl>#clusterStyle</styleUrl>
       <description>  <![CDATA[
-     <div>           <div><div >Flights</div> <div>87</div></div>
+     <div>           <div><div >Flights</div> <div>88</div></div>
            <div><div >Flights with anomalies</div> <div>2</div></div>
            <div><div >Anomalies</div> <div>198 </div></div>
-           <div><div >Percentage of anomalies</div> <div> 5.53 %</div></div>
+           <div><div >Percentage of anomalies</div> <div> 5.49 %</div></div>
            <div><div >Start time</div> <div>28-08-2025 03:25:04 (UTC)</div></div>
        </div>
 ]]></description>
@@ -100,7 +100,7 @@
      <div>           <div><div >Flights</div> <div>54</div></div>
            <div><div >Flights with anomalies</div> <div>4</div></div>
            <div><div >Anomalies</div> <div>259 </div></div>
-           <div><div >Percentage of anomalies</div> <div> 7.36 %</div></div>
+           <div><div >Percentage of anomalies</div> <div> 7.26 %</div></div>
            <div><div >Start time</div> <div>28-08-2025 03:02:14 (UTC)</div></div>
        </div>
 ]]></description>
@@ -137,10 +137,10 @@
       <name>ESHB - Ostra Hospital, from 28-08-2025 03:48:21</name>
       <styleUrl>#clusterStyle</styleUrl>
       <description>  <![CDATA[
-     <div>           <div><div >Flights</div> <div>80</div></div>
+     <div>           <div><div >Flights</div> <div>82</div></div>
            <div><div >Flights with anomalies</div> <div>2</div></div>
            <div><div >Anomalies</div> <div>340 </div></div>
-           <div><div >Percentage of anomalies</div> <div> 4.94 %</div></div>
+           <div><div >Percentage of anomalies</div> <div> 4.79 %</div></div>
            <div><div >Start time</div> <div>28-08-2025 03:48:21 (UTC)</div></div>
        </div>
 ]]></description>
@@ -160,7 +160,7 @@
      <div>           <div><div >Flights</div> <div>49</div></div>
            <div><div >Flights with anomalies</div> <div>3</div></div>
            <div><div >Anomalies</div> <div>126 </div></div>
-           <div><div >Percentage of anomalies</div> <div> 4.68 %</div></div>
+           <div><div >Percentage of anomalies</div> <div> 4.64 %</div></div>
            <div><div >Start time</div> <div>28-08-2025 04:08:26 (UTC)</div></div>
        </div>
 ]]></description>
