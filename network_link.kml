@@ -3,7 +3,7 @@
   <NetworkLink>
     <name>Live Helicopter Data</name>
     <Link>
-      <href>https://raw.githubusercontent.com/AdamNotts/kml-hosting-test/main/live_data.kml?v=17526962837</href>
+      <href>https://raw.githubusercontent.com/AdamNotts/kml-hosting-test/main/live_data.kml?v=17527235471</href>
       <refreshMode>onInterval</refreshMode>
       <refreshInterval>300</refreshInterval>
     </Link>
