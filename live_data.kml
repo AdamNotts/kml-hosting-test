@@ -37,10 +37,10 @@
       <name>ESHB - Ostra Hospital, from 18-09-2025 02:52:36</name>
       <styleUrl>#clusterStyle</styleUrl>
       <description>  <![CDATA[
-     <div>           <div><div >Flights</div> <div>53</div></div>
+     <div>           <div><div >Flights</div> <div>56</div></div>
            <div><div >Flights with anomalies</div> <div>10</div></div>
            <div><div >Anomalies</div> <div>677 </div></div>
-           <div><div >Percentage of anomalies</div> <div> 13.64 %</div></div>
+           <div><div >Percentage of anomalies</div> <div> 13.05 %</div></div>
            <div><div >Start time</div> <div>18-09-2025 02:52:36 (UTC)</div></div>
        </div>
 ]]></description>
@@ -57,10 +57,10 @@
       <name>ESHB - Ostra Hospital, from 18-09-2025 02:57:41</name>
       <styleUrl>#clusterStyle</styleUrl>
       <description>  <![CDATA[
-     <div>           <div><div >Flights</div> <div>76</div></div>
+     <div>           <div><div >Flights</div> <div>85</div></div>
            <div><div >Flights with anomalies</div> <div>6</div></div>
            <div><div >Anomalies</div> <div>648 </div></div>
-           <div><div >Percentage of anomalies</div> <div> 6.34 %</div></div>
+           <div><div >Percentage of anomalies</div> <div> 5.85 %</div></div>
            <div><div >Start time</div> <div>18-09-2025 02:57:41 (UTC)</div></div>
        </div>
 ]]></description>
@@ -77,10 +77,10 @@
       <name>ESHB - Ostra Hospital, from 18-09-2025 03:03:10</name>
       <styleUrl>#clusterStyle</styleUrl>
       <description>  <![CDATA[
-     <div>           <div><div >Flights</div> <div>77</div></div>
+     <div>           <div><div >Flights</div> <div>84</div></div>
            <div><div >Flights with anomalies</div> <div>5</div></div>
            <div><div >Anomalies</div> <div>621 </div></div>
-           <div><div >Percentage of anomalies</div> <div> 5.44 %</div></div>
+           <div><div >Percentage of anomalies</div> <div> 4.85 %</div></div>
            <div><div >Start time</div> <div>18-09-2025 03:03:10 (UTC)</div></div>
        </div>
 ]]></description>
@@ -97,10 +97,10 @@
       <name>ESHB - Ostra Hospital, from 18-09-2025 03:14:10</name>
       <styleUrl>#clusterStyle</styleUrl>
       <description>  <![CDATA[
-     <div>           <div><div >Flights</div> <div>45</div></div>
+     <div>           <div><div >Flights</div> <div>48</div></div>
            <div><div >Flights with anomalies</div> <div>2</div></div>
            <div><div >Anomalies</div> <div>125 </div></div>
-           <div><div >Percentage of anomalies</div> <div> 7.81 %</div></div>
+           <div><div >Percentage of anomalies</div> <div> 7.61 %</div></div>
            <div><div >Start time</div> <div>18-09-2025 03:14:10 (UTC)</div></div>
        </div>
 ]]></description>
@@ -113,34 +113,14 @@
         </outerBoundaryIs>
       </Polygon>
     </Placemark>
- <Placemark id="adsb-cluster-PildoBox303-36407">
-      <name>ESHB - Ostra Hospital, from 18-09-2025 03:29:57</name>
-      <styleUrl>#clusterStyle</styleUrl>
-      <description>  <![CDATA[
-     <div>           <div><div >Flights</div> <div>32</div></div>
-           <div><div >Flights with anomalies</div> <div>4</div></div>
-           <div><div >Anomalies</div> <div>80 </div></div>
-           <div><div >Percentage of anomalies</div> <div> 4.22 %</div></div>
-           <div><div >Start time</div> <div>18-09-2025 03:29:57 (UTC)</div></div>
-       </div>
-]]></description>
-      <Polygon>
-        <outerBoundaryIs>
-          <LinearRing>
-           <altitudeMode>relativeToGround</altitudeMode>
-            <coordinates>16.218799353658554,56.15496826171875,50,16.216369269948398,56.185966942165614,50,16.209097513222297,56.21672970393676,50,16.19703942593973,56.24702242384004,50,16.180286777425806,56.276614555985766,50,16.15896706545123,56.305280886380075,50,16.133242545897325,56.33280324693947,50,16.10330899789079,56.35897217588163,50,16.069394233806317,56.38358851185609,50,16.03175636547689,56.40646490968231,50,15.990681839806863,56.42742726615971,50,15.94648325873806,56.446316045098065,50,15.899497000160244,56.4629874914843,50,15.850080657872272,56.47731472554492,50,15.798610320077364,56.48918870837772,50,15.745477707124772,56.49851907180361,50,15.691087190281419,56.505234806123106,50,15.635852714222374,56.509284800542964,50,15.580194646661932,56.51063823216019,50,15.52453657910149,56.509284800542964,50,15.469302103042445,56.505234806123106,50,15.414911586199091,56.49851907180361,50,15.3617789732465,56.48918870837772,50,15.310308635451591,56.47731472554492,50,15.26089229316362,56.4629874914843,50,15.213906034585804,56.446316045098065,50,15.169707453517,56.42742726615971,50,15.128632927846972,56.40646490968231,50,15.090995059517546,56.38358851185609,50,15.057080295433076,56.35897217588163,50,15.027146747426539,56.33280324693947,50,15.001422227872634,56.305280886380075,50,14.980102515898059,56.276614555985766,50,14.963349867384132,56.24702242384004,50,14.951291780101569,56.21672970393676,50,14.944020023375463,56.185966942165614,50,14.94158993966531,56.15496826171875,50,14.944020023375463,56.123969581271886,50,14.951291780101569,56.09320681950074,50,14.963349867384132,56.06291409959746,50,14.980102515898059,56.033321967451734,50,15.001422227872634,56.004655637057425,50,15.027146747426539,55.97713327649803,50,15.057080295433076,55.95096434755587,50,15.090995059517546,55.92634801158141,50,15.128632927846972,55.90347161375519,50,15.169707453516999,55.88250925727779,50,15.213906034585804,55.863620478339435,50,15.26089229316362,55.8469490319532,50,15.310308635451591,55.83262179789258,50,15.3617789732465,55.82074781505978,50,15.414911586199091,55.81141745163389,50,15.469302103042445,55.804701717314394,50,15.52453657910149,55.800651722894536,50,15.580194646661932,55.79929829127731,50,15.635852714222374,55.800651722894536,50,15.691087190281419,55.804701717314394,50,15.745477707124772,55.81141745163389,50,15.798610320077364,55.82074781505978,50,15.850080657872272,55.83262179789258,50,15.899497000160244,55.8469490319532,50,15.94648325873806,55.863620478339435,50,15.990681839806863,55.88250925727779,50,16.03175636547689,55.90347161375519,50,16.069394233806317,55.92634801158141,50,16.10330899789079,55.95096434755587,50,16.133242545897325,55.97713327649803,50,16.15896706545123,56.004655637057425,50,16.180286777425806,56.033321967451734,50,16.19703942593973,56.06291409959746,50,16.209097513222297,56.09320681950074,50,16.216369269948398,56.123969581271886,50,16.218799353658554,56.15496826171875,50</coordinates>
-          </LinearRing>
-        </outerBoundaryIs>
-      </Polygon>
-    </Placemark>
  <Placemark id="adsb-cluster-PildoBox303-36414">
       <name>ESHB - Ostra Hospital, from 18-09-2025 04:03:44</name>
       <styleUrl>#clusterStyle</styleUrl>
       <description>  <![CDATA[
-     <div>           <div><div >Flights</div> <div>44</div></div>
+     <div>           <div><div >Flights</div> <div>48</div></div>
            <div><div >Flights with anomalies</div> <div>6</div></div>
            <div><div >Anomalies</div> <div>270 </div></div>
-           <div><div >Percentage of anomalies</div> <div> 5.30 %</div></div>
+           <div><div >Percentage of anomalies</div> <div> 5.13 %</div></div>
            <div><div >Start time</div> <div>18-09-2025 04:03:44 (UTC)</div></div>
        </div>
 ]]></description>
@@ -153,34 +133,14 @@
         </outerBoundaryIs>
       </Polygon>
     </Placemark>
- <Placemark id="adsb-cluster-PildoBox303-36417">
-      <name>ESHB - Ostra Hospital, from 18-09-2025 04:14:10</name>
-      <styleUrl>#clusterStyle</styleUrl>
-      <description>  <![CDATA[
-     <div>           <div><div >Flights</div> <div>65</div></div>
-           <div><div >Flights with anomalies</div> <div>3</div></div>
-           <div><div >Anomalies</div> <div>391 </div></div>
-           <div><div >Percentage of anomalies</div> <div> 4.04 %</div></div>
-           <div><div >Start time</div> <div>18-09-2025 04:14:10 (UTC)</div></div>
-       </div>
-]]></description>
-      <Polygon>
-        <outerBoundaryIs>
-          <LinearRing>
-           <altitudeMode>relativeToGround</altitudeMode>
-            <coordinates>15.235796710654009,56.9502067565918,50,15.23318508864625,56.98282845788998,50,15.225370098643396,57.01520188834376,50,15.212411217438188,57.047080666599776,50,15.19440706994138,57.07822217590657,50,15.17149467858663,57.108389410574546,50,15.143848420507025,57.13735277973242,50,15.111678700419818,57.16489185465233,50,15.075230349319481,57.1907970463456,50,15.034780761166003,57.21487120066145,50,14.990637781749362,57.236931098749174,50,14.943137365797178,57.256808851464186,50,14.89264102015638,57.27435317710581,50,14.839533052507827,57.28943055276237,50,14.784217646552788,57.30192623050114,50,14.727115785930938,57.31174511066943,50,14.668662050280654,57.318812465660365,50,14.609301307825566,57.32307450863508,50,14.549485329658754,57.32449880287304,50,14.489669351491942,57.32307450863508,50,14.430308609036855,57.318812465660365,50,14.371854873386571,57.31174511066943,50,14.314753012764719,57.30192623050114,50,14.259437606809682,57.28943055276237,50,14.206329639161128,57.27435317710581,50,14.155833293520331,57.256808851464186,50,14.108332877568147,57.236931098749174,50,14.064189898151506,57.21487120066145,50,14.023740309998027,57.1907970463456,50,13.987291958897691,57.16489185465233,50,13.955122238810484,57.13735277973242,50,13.927475980730879,57.108389410574546,50,13.904563589376128,57.07822217590657,50,13.88655944187932,57.047080666599776,50,13.873600560674113,57.01520188834376,50,13.865785570671258,56.98282845788998,50,13.8631739486635,56.9502067565918,50,13.865785570671258,56.917585055293614,50,13.873600560674113,56.88521162483983,50,13.88655944187932,56.85333284658382,50,13.904563589376128,56.822191337277026,50,13.927475980730877,56.79202410260905,50,13.955122238810484,56.76306073345118,50,13.987291958897691,56.73552165853126,50,14.023740309998027,56.70961646683799,50,14.064189898151506,56.685542312522145,50,14.108332877568147,56.66348241443442,50,14.155833293520331,56.64360466171941,50,14.206329639161126,56.626060336077785,50,14.259437606809682,56.610982960421225,50,14.31475301276472,56.598487282682456,50,14.371854873386571,56.588668402514166,50,14.430308609036855,56.58160104752323,50,14.489669351491942,56.57733900454851,50,14.549485329658754,56.575914710310556,50,14.609301307825566,56.57733900454851,50,14.668662050280654,56.58160104752323,50,14.727115785930938,56.588668402514166,50,14.78421764655279,56.598487282682456,50,14.839533052507829,56.610982960421225,50,14.89264102015638,56.626060336077785,50,14.943137365797178,56.64360466171941,50,14.990637781749362,56.66348241443442,50,15.034780761166003,56.685542312522145,50,15.075230349319481,56.70961646683799,50,15.111678700419818,56.73552165853126,50,15.143848420507025,56.76306073345118,50,15.171494678586631,56.79202410260905,50,15.19440706994138,56.822191337277026,50,15.212411217438188,56.85333284658382,50,15.225370098643396,56.88521162483983,50,15.23318508864625,56.917585055293614,50,15.235796710654009,56.9502067565918,50</coordinates>
-          </LinearRing>
-        </outerBoundaryIs>
-      </Polygon>
-    </Placemark>
  <Placemark id="adsb-cluster-PildoBox303-36418">
       <name>ESHB - Ostra Hospital, from 18-09-2025 05:39:52</name>
       <styleUrl>#clusterStyle</styleUrl>
       <description>  <![CDATA[
-     <div>           <div><div >Flights</div> <div>18</div></div>
+     <div>           <div><div >Flights</div> <div>20</div></div>
            <div><div >Flights with anomalies</div> <div>2</div></div>
            <div><div >Anomalies</div> <div>103 </div></div>
-           <div><div >Percentage of anomalies</div> <div> 9.08 %</div></div>
+           <div><div >Percentage of anomalies</div> <div> 8.48 %</div></div>
            <div><div >Start time</div> <div>18-09-2025 05:39:52 (UTC)</div></div>
        </div>
 ]]></description>
@@ -197,10 +157,10 @@
       <name>ESHB - Ostra Hospital, from 18-09-2025 04:43:42</name>
       <styleUrl>#clusterStyle</styleUrl>
       <description>  <![CDATA[
-     <div>           <div><div >Flights</div> <div>13</div></div>
+     <div>           <div><div >Flights</div> <div>16</div></div>
            <div><div >Flights with anomalies</div> <div>3</div></div>
            <div><div >Anomalies</div> <div>10 </div></div>
-           <div><div >Percentage of anomalies</div> <div> 6.02 %</div></div>
+           <div><div >Percentage of anomalies</div> <div> 4.98 %</div></div>
            <div><div >Start time</div> <div>18-09-2025 04:43:42 (UTC)</div></div>
        </div>
 ]]></description>
@@ -217,10 +177,10 @@
       <name>ESHB - Ostra Hospital, from 18-09-2025 05:12:38</name>
       <styleUrl>#clusterStyle</styleUrl>
       <description>  <![CDATA[
-     <div>           <div><div >Flights</div> <div>36</div></div>
+     <div>           <div><div >Flights</div> <div>38</div></div>
            <div><div >Flights with anomalies</div> <div>4</div></div>
            <div><div >Anomalies</div> <div>196 </div></div>
-           <div><div >Percentage of anomalies</div> <div> 7.42 %</div></div>
+           <div><div >Percentage of anomalies</div> <div> 6.90 %</div></div>
            <div><div >Start time</div> <div>18-09-2025 05:12:38 (UTC)</div></div>
        </div>
 ]]></description>
