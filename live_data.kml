@@ -33,34 +33,14 @@
             
        
 <name>ESHB - Ostra Hospital</name>
- <Placemark id="adsb-cluster-PildoBox303-36615">
-      <name>ESHB - Ostra Hospital, from 19-09-2025 14:20:22</name>
-      <styleUrl>#clusterStyle</styleUrl>
-      <description>  <![CDATA[
-     <div>           <div><div >Flights</div> <div>30</div></div>
-           <div><div >Flights with anomalies</div> <div>2</div></div>
-           <div><div >Anomalies</div> <div>41 </div></div>
-           <div><div >Percentage of anomalies</div> <div> 4.08 %</div></div>
-           <div><div >Start time</div> <div>19-09-2025 14:20:22 (UTC)</div></div>
-       </div>
-]]></description>
-      <Polygon>
-        <outerBoundaryIs>
-          <LinearRing>
-           <altitudeMode>relativeToGround</altitudeMode>
-            <coordinates>14.645663932665247,55.845392000877254,50,14.644857363880279,55.85576351907187,50,14.642443796000848,55.86605610375054,50,14.638441597735868,55.87619142212901,50,14.632881228230731,55.88609233831456,50,14.625805005254811,55.895683500356675,50,14.617266783137698,55.90489191372091,50,14.607331542905222,55.913647496821376,50,14.596074897734612,55.921883614383916,50,14.583582517492566,55.92953758458077,50,14.56994947673583,55.936551156077144,50,14.555279531136422,55.94287095135905,50,14.539684327838305,55.948448872968385,50,14.52328255575522,55.95324246955367,50,14.50619904227638,55.957215258950434,50,14.488563803254667,55.96033700583253,50,14.470511053507483,55.96258395182122,50,14.452178185360955,55.9639389963008,50,14.433704723011363,55.964391826564565,50,14.415231260661772,55.9639389963008,50,14.396898392515244,55.96258395182122,50,14.37884564276806,55.96033700583253,50,14.361210403746346,55.957215258950434,50,14.344126890267507,55.95324246955367,50,14.327725118184421,55.948448872968385,50,14.312129914886304,55.94287095135905,50,14.297459969286896,55.936551156077144,50,14.28382692853016,55.92953758458077,50,14.271334548288115,55.921883614383916,50,14.260077903117505,55.913647496821376,50,14.250142662885029,55.90489191372091,50,14.241604440767915,55.895683500356675,50,14.234528217791995,55.88609233831456,50,14.228967848286858,55.87619142212901,50,14.224965650021879,55.86605610375054,50,14.222552082142448,55.85576351907187,50,14.22174551335748,55.845392000877254,50,14.222552082142448,55.83502048268264,50,14.224965650021879,55.82472789800397,50,14.228967848286858,55.8145925796255,50,14.234528217791995,55.80469166343995,50,14.241604440767915,55.79510050139783,50,14.250142662885029,55.7858920880336,50,14.260077903117505,55.77713650493313,50,14.271334548288115,55.76890038737059,50,14.28382692853016,55.76124641717374,50,14.297459969286896,55.754232845677365,50,14.312129914886304,55.74791305039546,50,14.327725118184421,55.742335128786124,50,14.344126890267507,55.73754153220084,50,14.361210403746346,55.733568742804074,50,14.37884564276806,55.73044699592198,50,14.396898392515244,55.728200049933285,50,14.415231260661772,55.72684500545371,50,14.433704723011363,55.72639217518994,50,14.452178185360953,55.72684500545371,50,14.470511053507483,55.728200049933285,50,14.488563803254667,55.73044699592198,50,14.50619904227638,55.733568742804074,50,14.52328255575522,55.73754153220084,50,14.539684327838305,55.742335128786124,50,14.555279531136422,55.74791305039546,50,14.56994947673583,55.75423284567736,50,14.583582517492566,55.76124641717374,50,14.596074897734612,55.76890038737059,50,14.607331542905222,55.77713650493313,50,14.617266783137698,55.7858920880336,50,14.625805005254811,55.79510050139783,50,14.632881228230731,55.80469166343995,50,14.638441597735868,55.8145925796255,50,14.642443796000848,55.82472789800397,50,14.644857363880279,55.83502048268264,50,14.645663932665247,55.845392000877254,50</coordinates>
-          </LinearRing>
-        </outerBoundaryIs>
-      </Polygon>
-    </Placemark>
  <Placemark id="adsb-cluster-PildoBox303-36628">
       <name>ESHB - Ostra Hospital, from 19-09-2025 20:03:21</name>
       <styleUrl>#clusterStyle</styleUrl>
       <description>  <![CDATA[
-     <div>           <div><div >Flights</div> <div>5</div></div>
+     <div>           <div><div >Flights</div> <div>7</div></div>
            <div><div >Flights with anomalies</div> <div>2</div></div>
            <div><div >Anomalies</div> <div>23 </div></div>
-           <div><div >Percentage of anomalies</div> <div> 7.93 %</div></div>
+           <div><div >Percentage of anomalies</div> <div> 6.08 %</div></div>
            <div><div >Start time</div> <div>19-09-2025 20:03:21 (UTC)</div></div>
        </div>
 ]]></description>
@@ -77,10 +57,10 @@
       <name>ESHB - Ostra Hospital, from 19-09-2025 20:06:38</name>
       <styleUrl>#clusterStyle</styleUrl>
       <description>  <![CDATA[
-     <div>           <div><div >Flights</div> <div>6</div></div>
+     <div>           <div><div >Flights</div> <div>7</div></div>
            <div><div >Flights with anomalies</div> <div>4</div></div>
            <div><div >Anomalies</div> <div>114 </div></div>
-           <div><div >Percentage of anomalies</div> <div> 29.08 %</div></div>
+           <div><div >Percentage of anomalies</div> <div> 23.70 %</div></div>
            <div><div >Start time</div> <div>19-09-2025 20:06:38 (UTC)</div></div>
        </div>
 ]]></description>
@@ -97,10 +77,10 @@
       <name>ESHB - Ostra Hospital, from 19-09-2025 20:26:31</name>
       <styleUrl>#clusterStyle</styleUrl>
       <description>  <![CDATA[
-     <div>           <div><div >Flights</div> <div>2</div></div>
+     <div>           <div><div >Flights</div> <div>3</div></div>
            <div><div >Flights with anomalies</div> <div>2</div></div>
            <div><div >Anomalies</div> <div>28 </div></div>
-           <div><div >Percentage of anomalies</div> <div> 20.29 %</div></div>
+           <div><div >Percentage of anomalies</div> <div> 11.57 %</div></div>
            <div><div >Start time</div> <div>19-09-2025 20:26:31 (UTC)</div></div>
        </div>
 ]]></description>
@@ -117,10 +97,10 @@
       <name>ESHB - Ostra Hospital, from 19-09-2025 20:29:13</name>
       <styleUrl>#clusterStyle</styleUrl>
       <description>  <![CDATA[
-     <div>           <div><div >Flights</div> <div>3</div></div>
+     <div>           <div><div >Flights</div> <div>4</div></div>
            <div><div >Flights with anomalies</div> <div>2</div></div>
            <div><div >Anomalies</div> <div>18 </div></div>
-           <div><div >Percentage of anomalies</div> <div> 35.29 %</div></div>
+           <div><div >Percentage of anomalies</div> <div> 21.18 %</div></div>
            <div><div >Start time</div> <div>19-09-2025 20:29:13 (UTC)</div></div>
        </div>
 ]]></description>
