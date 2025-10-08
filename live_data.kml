@@ -33,5 +33,18 @@
             
        
 <name>Clusters</name>
+ <Placemark id="adsb-cluster-228">
+      <name>Jamming Area</name>
+      <styleUrl>#clusterStyle</styleUrl>
+      <description></description>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+           <altitudeMode>relativeToGround</altitudeMode>
+            <coordinates>15.895985106167966,55.171325838880925,50 16.693210376417934,55.51639160133521,50 16.906789623582064,55.51639160133521,50 17.71475205146081,54.70985700565162,50 17.716391601335207,54.493210376417935,50 16.7098570056516,53.485247948539175,50 15.993210376417952,53.28360839866478,50 14.982257858564466,54.29999999999999,50 15.895985106167966,55.171325838880925,50</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
   </Document>
 </kml>
