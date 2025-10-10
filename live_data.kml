@@ -33,44 +33,5 @@
             
        
 <name>Clusters</name>
- <Placemark id="adsb-cluster-268">
-      <name>Jamming Area</name>
-      <styleUrl>#clusterStyle</styleUrl>
-      <description></description>
-      <Polygon>
-        <outerBoundaryIs>
-          <LinearRing>
-           <altitudeMode>relativeToGround</altitudeMode>
-            <coordinates>11.782985254370688,54.13156794356516,50 12.441715149290262,54.324999999999996,50 13.058284850709738,54.324999999999996,50 13.614370330404588,54.222306770413404,50 13.979539879594231,54.346265129093055,50 14.292005201063096,54.61930115202188,50 14.720489993696939,54.70407571315386,50 14.411606649080344,54.38262942210118,50 13.51160664908034,53.882629422101175,50 12.304075713153829,53.37951000630305,50 12.15282526552895,53.41181939541172,50 11.582629422101173,53.988393350919665,50 11.782985254370688,54.13156794356516,50</coordinates>
-          </LinearRing>
-        </outerBoundaryIs>
-      </Polygon>
-    </Placemark>
- <Placemark id="adsb-cluster-285">
-      <name>Jamming Area</name>
-      <styleUrl>#clusterStyle</styleUrl>
-      <description></description>
-      <Polygon>
-        <outerBoundaryIs>
-          <LinearRing>
-           <altitudeMode>relativeToGround</altitudeMode>
-            <coordinates>10.149999999999997,54.02266671160339,50 10.576118295233963,53.86995312020818,50 11.106789623582051,53.816391601335205,50 11.417401231162804,53.50346132008591,50 11.414752051460818,53.290142994348386,50 10.503461320085922,52.3825987688372,50 9.482598768837196,53.39653867991409,50 10.149999999999997,54.02266671160339,50</coordinates>
-          </LinearRing>
-        </outerBoundaryIs>
-      </Polygon>
-    </Placemark>
- <Placemark id="adsb-cluster-287">
-      <name>Jamming Area</name>
-      <styleUrl>#clusterStyle</styleUrl>
-      <description></description>
-      <Polygon>
-        <outerBoundaryIs>
-          <LinearRing>
-           <altitudeMode>relativeToGround</altitudeMode>
-            <coordinates>7.675,59.012183458742825,50 7.678011635667511,59.20910787872092,50 7.886777409536604,59.41978900508491,50 8.290892121279112,59.6219883643325,50 8.719789005084897,59.713222590463424,50 8.721988364332486,59.590892121279076,50 8.513222590463394,59.28021099491509,50 7.909107878720909,58.9780116356675,50 7.675,59.012183458742825,50</coordinates>
-          </LinearRing>
-        </outerBoundaryIs>
-      </Polygon>
-    </Placemark>
   </Document>
 </kml>
