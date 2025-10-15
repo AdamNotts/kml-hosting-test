@@ -33,58 +33,6 @@
             
        
 <name>Clusters</name>
- <Placemark id="adsb-cluster-565">
-      <name>Jamming Area</name>
-      <styleUrl>#clusterStyle</styleUrl>
-      <description></description>
-      <Polygon>
-        <outerBoundaryIs>
-          <LinearRing>
-           <altitudeMode>relativeToGround</altitudeMode>
-            <coordinates>10.350000000000003,54.02452472339589,50 10.910120677023947,54.05415329112649,50 11.752047300902797,54.34948440685582,50 11.999999999999982,54.51960015322803,50 12.710889261696126,54.21629693180559,50 12.824524723395896,54.05,50 12.138080802745021,53.544786136093634,50 11.1,53.18039984677197,50 10.321089858799484,53.943554802141186,50 10.281891819598536,54.007500653912196,50 10.350000000000003,54.02452472339589,50</coordinates>
-          </LinearRing>
-        </outerBoundaryIs>
-      </Polygon>
-    </Placemark>
- <Placemark id="adsb-cluster-565">
-      <name>Jamming Area</name>
-      <styleUrl>#clusterStyle</styleUrl>
-      <description></description>
-      <Polygon>
-        <outerBoundaryIs>
-          <LinearRing>
-           <altitudeMode>relativeToGround</altitudeMode>
-            <coordinates>14.282255238647624,54.38238942229305,50 14.384885437614033,54.519913857003026,50 14.520774118661853,54.533891302024045,50 14.513884063978525,54.47922102984052,50 14.282255238647624,54.38238942229305,50</coordinates>
-          </LinearRing>
-        </outerBoundaryIs>
-      </Polygon>
-    </Placemark>
- <Placemark id="adsb-cluster-565">
-      <name>Jamming Area</name>
-      <styleUrl>#clusterStyle</styleUrl>
-      <description></description>
-      <Polygon>
-        <outerBoundaryIs>
-          <LinearRing>
-           <altitudeMode>relativeToGround</altitudeMode>
-            <coordinates>14.674999999999999,54.60043231627798,50 14.995131048785636,54.824477870725104,50 15.124477870725109,54.70486895121436,50 14.9106328042034,54.6743301398861,50 14.804868951214369,54.575522129274894,50 14.674999999999999,54.60043231627798,50</coordinates>
-          </LinearRing>
-        </outerBoundaryIs>
-      </Polygon>
-    </Placemark>
- <Placemark id="adsb-cluster-567">
-      <name>Jamming Area</name>
-      <styleUrl>#clusterStyle</styleUrl>
-      <description></description>
-      <Polygon>
-        <outerBoundaryIs>
-          <LinearRing>
-           <altitudeMode>relativeToGround</altitudeMode>
-            <coordinates>3.9749999999999996,40.30279040506691,50 3.979441773243432,40.413736567952235,50 4.713736567952232,41.22055822675657,50 4.720558226756576,40.98626343204778,50 3.9749999999999996,40.30279040506691,50</coordinates>
-          </LinearRing>
-        </outerBoundaryIs>
-      </Polygon>
-    </Placemark>
  <Placemark id="adsb-cluster-568">
       <name>Jamming Area</name>
       <styleUrl>#clusterStyle</styleUrl>
@@ -93,7 +41,7 @@
         <outerBoundaryIs>
           <LinearRing>
            <altitudeMode>relativeToGround</altitudeMode>
-            <coordinates>19.73021543755486,54.034429223385814,50 18.782257858564467,55.0,50 19.63021543755486,55.865570776614184,50 19.826309725345812,55.925,50 19.969784562445167,55.865570776614156,50 20.665570776614167,55.16978456244516,50 20.724999999999998,54.97369027465419,50 20.66557077661415,54.83021543755482,50 19.86978456244513,54.03442922338581,50 19.79999999999998,53.982257858564466,50 19.73021543755486,54.034429223385814,50</coordinates>
+            <coordinates>19.400109389209877,55.474919456924205,50 19.38156276521677,55.61231936642446,50 19.6620353801619,55.89739071922122,50 19.904325986202892,55.92174820128021,50 20.72174820128021,55.10432598620288,50 20.71843723478322,54.88768063357553,50 19.8043259862029,53.978251798719796,50 19.781562765216773,54.112319366424465,50 20.07828958750138,54.47651287549879,50 20.111522544270272,54.81393274805745,50 19.92933363238358,55.13531102855709,50 19.400109389209877,55.474919456924205,50</coordinates>
           </LinearRing>
         </outerBoundaryIs>
       </Polygon>
