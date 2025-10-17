@@ -1,7 +1,8 @@
-<kml xmlns='http://www.opengis.net/kml/2.2'>
-  <Document>
-    <name>The OWL</name>
-    
+<?xml version="1.0" encoding="UTF-8"?>
+                        <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+                  <Document>
+                    <name>The OWL</name>
+                    
                <Style id="normalClusterStyle">
                  <LineStyle>
                     <color>ff0000ff</color>
@@ -31,7 +32,9 @@
                   </Pair>
                 </StyleMap>
             
-       
+
+                       
 <name>Clusters</name>
-  </Document>
-</kml>
+
+                  </Document>
+                </kml>
