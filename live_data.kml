@@ -35,6 +35,306 @@
 
                        
 <name>Clusters</name>
+ <Placemark id="adsb-cluster-454">
+      <name>Jamming Area</name>
+      <styleUrl>#clusterStyle</styleUrl>
+      <description>  <![CDATA[
+     <div>           <div><div >Flights</div> <div>0</div></div>
+           <div><div >Flights with anomalies</div> <div>0</div></div>
+           <div><div >Anomalies</div> <div>0 </div></div>
+           <div><div >Percentage of anomalies</div> <div> NaN %</div></div>
+           <div><div >Start time</div> <div>11-10-2025 02:30:00 (UTC)</div></div>
+       </div>
+]]></description>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+           <altitudeMode>relativeToGround</altitudeMode>
+            <coordinates>9.804015702422323,54.624118129059696,50 10.026848482682759,54.708506856376566,50 10.808506856376535,53.926848482682786,50 10.816774423272273,53.7832255767277,50 10.573151517317205,53.691493143623475,50 9.791493143623466,54.47315151731721,50 9.804015702422323,54.624118129059696,50</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+ <Placemark id="adsb-cluster-455">
+      <name>Jamming Area</name>
+      <styleUrl>#clusterStyle</styleUrl>
+      <description>  <![CDATA[
+     <div>           <div><div >Flights</div> <div>0</div></div>
+           <div><div >Flights with anomalies</div> <div>0</div></div>
+           <div><div >Anomalies</div> <div>0 </div></div>
+           <div><div >Percentage of anomalies</div> <div> NaN %</div></div>
+           <div><div >Start time</div> <div>11-10-2025 04:40:00 (UTC)</div></div>
+       </div>
+]]></description>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+           <altitudeMode>relativeToGround</altitudeMode>
+            <coordinates>13.906224667394559,55.543134985143354,50 13.991803128889554,55.81978899740384,50 14.604178728654606,55.82100788759208,50 15.04338373670132,55.59197160235801,50 15.221007887592089,55.2958212713454,50 14.64338373670132,54.608028397641995,50 14.49582127134541,54.57899211240791,50 14.182190372856832,54.98809998759362,50 13.906224667394559,55.543134985143354,50</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+ <Placemark id="adsb-cluster-473">
+      <name>Jamming Area</name>
+      <styleUrl>#clusterStyle</styleUrl>
+      <description>  <![CDATA[
+     <div>           <div><div >Flights</div> <div>0</div></div>
+           <div><div >Flights with anomalies</div> <div>0</div></div>
+           <div><div >Anomalies</div> <div>0 </div></div>
+           <div><div >Percentage of anomalies</div> <div> NaN %</div></div>
+           <div><div >Start time</div> <div>12-10-2025 02:20:00 (UTC)</div></div>
+       </div>
+]]></description>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+           <altitudeMode>relativeToGround</altitudeMode>
+            <coordinates>11.395985106167988,59.871325838880935,50 12.603461320085922,59.9174012311628,50 13.809857005651619,59.31475205146081,50 13.917401231162804,59.19653867991409,50 13.503461320085922,58.9825987688372,50 13.003461320085929,58.8825987688372,50 12.496538679914078,58.8825987688372,50 11.893210376417942,59.08360839866479,50 11.430215437554816,59.33442922338585,50 11.275,59.5736902746542,50 11.283608398664795,59.80678962358206,50 11.395985106167988,59.871325838880935,50</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+ <Placemark id="adsb-cluster-482">
+      <name>Jamming Area</name>
+      <styleUrl>#clusterStyle</styleUrl>
+      <description>  <![CDATA[
+     <div>           <div><div >Flights</div> <div>0</div></div>
+           <div><div >Flights with anomalies</div> <div>0</div></div>
+           <div><div >Anomalies</div> <div>0 </div></div>
+           <div><div >Percentage of anomalies</div> <div> NaN %</div></div>
+           <div><div >Start time</div> <div>12-10-2025 04:55:00 (UTC)</div></div>
+       </div>
+]]></description>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+           <altitudeMode>relativeToGround</altitudeMode>
+            <coordinates>15.275,54.84264210559989,50 15.658822912279442,55.317765037739,50 15.788428912190831,55.630661600490015,50 15.788428912190827,55.96933839951001,50 15.480783195618242,56.4920401389996,50 15.512474852504111,56.547830191563435,50 15.595942098051708,56.620400450719785,50 16.05735789440011,56.625,50 16.635078877806052,56.503335929238965,50 17.0147079053198,56.614707905319804,50 17.120400450719792,56.304057901948276,50 17.087525147495903,56.052169808436574,50 16.211555927058185,55.18270533297174,50 15.71816155719158,55.10693377305506,50 15.311555927058185,54.78270533297174,50 15.275,54.84264210559989,50</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+ <Placemark id="adsb-cluster-500">
+      <name>Jamming Area</name>
+      <styleUrl>#clusterStyle</styleUrl>
+      <description>  <![CDATA[
+     <div>           <div><div >Flights</div> <div>0</div></div>
+           <div><div >Flights with anomalies</div> <div>0</div></div>
+           <div><div >Anomalies</div> <div>0 </div></div>
+           <div><div >Percentage of anomalies</div> <div> NaN %</div></div>
+           <div><div >Start time</div> <div>12-10-2025 22:05:00 (UTC)</div></div>
+       </div>
+]]></description>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+           <altitudeMode>relativeToGround</altitudeMode>
+            <coordinates>14.687647419821733,55.485653899320866,50 14.08360839866479,56.20678962358206,50 14.443821068269438,56.28056709806549,50 14.95998397863322,56.5564619216197,50 15.390142994348395,57.11475205146082,50 15.596538679914078,57.2174012311628,50 15.805938902084545,57.18631499651942,50 16.71475205146082,56.709857005651614,50 16.71475205146083,56.49014299434841,50 15.8098570056516,55.58524794853918,50 14.80000000000001,55.28225785856446,50 14.687647419821733,55.485653899320866,50</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+ <Placemark id="adsb-cluster-505">
+      <name>Jamming Area</name>
+      <styleUrl>#clusterStyle</styleUrl>
+      <description>  <![CDATA[
+     <div>           <div><div >Flights</div> <div>0</div></div>
+           <div><div >Flights with anomalies</div> <div>0</div></div>
+           <div><div >Anomalies</div> <div>0 </div></div>
+           <div><div >Percentage of anomalies</div> <div> NaN %</div></div>
+           <div><div >Start time</div> <div>13-10-2025 01:25:00 (UTC)</div></div>
+       </div>
+]]></description>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+           <altitudeMode>relativeToGround</altitudeMode>
+            <coordinates>14.230215437554845,52.234429223385824,50 13.282257858564467,53.20000000000001,50 14.130215437554817,54.06557077661415,50 14.326309725345814,54.125,50 14.469784562445135,54.065570776614194,50 15.165570776614166,53.36978456244516,50 15.224999999999998,53.17369027465419,50 15.165570776614192,53.030215437554865,50 14.369784562445169,52.23442922338584,50 14.30000000000001,52.18225785856447,50 14.230215437554845,52.234429223385824,50</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+ <Placemark id="adsb-cluster-538">
+      <name>Jamming Area</name>
+      <styleUrl>#clusterStyle</styleUrl>
+      <description>  <![CDATA[
+     <div>           <div><div >Flights</div> <div>0</div></div>
+           <div><div >Flights with anomalies</div> <div>0</div></div>
+           <div><div >Anomalies</div> <div>0 </div></div>
+           <div><div >Percentage of anomalies</div> <div> NaN %</div></div>
+           <div><div >Start time</div> <div>13-10-2025 20:40:00 (UTC)</div></div>
+       </div>
+]]></description>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+           <altitudeMode>relativeToGround</altitudeMode>
+            <coordinates>16.838104326373273,57.1734596654326,50 17.028619567856758,57.512532756014735,50 16.99176609605984,58.119878402563536,50 17.50823390394016,58.019878402563535,50 17.919878402563548,57.70823390394014,50 17.917890089661114,57.48804622425796,50 17.004197607827454,56.57889720039662,50 16.88804622425797,56.58210991033888,50 16.578897200396614,56.89580239217255,50 16.838104326373273,57.1734596654326,50</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+ <Placemark id="adsb-cluster-545">
+      <name>Jamming Area</name>
+      <styleUrl>#clusterStyle</styleUrl>
+      <description>  <![CDATA[
+     <div>           <div><div >Flights</div> <div>0</div></div>
+           <div><div >Flights with anomalies</div> <div>0</div></div>
+           <div><div >Anomalies</div> <div>0 </div></div>
+           <div><div >Percentage of anomalies</div> <div> NaN %</div></div>
+           <div><div >Start time</div> <div>14-10-2025 04:00:00 (UTC)</div></div>
+       </div>
+]]></description>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+           <altitudeMode>relativeToGround</altitudeMode>
+            <coordinates>10.87454103446162,53.79010362647905,50 10.48011443989355,54.186712893533816,50 10.486712893533804,54.419885560106444,50 10.909152318116567,54.42209565052413,50 11.322095650524133,54.00915231811655,50 11.009152318116566,53.77790434947587,50 10.87454103446162,53.79010362647905,50</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+ <Placemark id="adsb-cluster-574">
+      <name>Jamming Area</name>
+      <styleUrl>#clusterStyle</styleUrl>
+      <description>  <![CDATA[
+     <div>           <div><div >Flights</div> <div>0</div></div>
+           <div><div >Flights with anomalies</div> <div>0</div></div>
+           <div><div >Anomalies</div> <div>0 </div></div>
+           <div><div >Percentage of anomalies</div> <div> NaN %</div></div>
+           <div><div >Start time</div> <div>15-10-2025 19:05:00 (UTC)</div></div>
+       </div>
+]]></description>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+           <altitudeMode>relativeToGround</altitudeMode>
+            <coordinates>14.332779132567518,56.371605347712354,50 14.275,56.7263097253458,50 14.334429223385834,56.86978456244516,50 14.49321037641795,57.016391601335215,50 15.026309725345813,57.125,50 15.81614505634521,56.71268390222547,50 16.706789623582065,56.61639160133521,50 16.81639160133521,56.506789623582065,50 16.825,56.273690274654186,50 16.765570776614215,56.130215437554895,50 15.90000000000001,55.28225785856446,50 15.417918467536028,55.957530309936935,50 14.901755557172214,56.23342513349114,50 14.332779132567518,56.371605347712354,50</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+ <Placemark id="adsb-cluster-583">
+      <name>Jamming Area</name>
+      <styleUrl>#clusterStyle</styleUrl>
+      <description>  <![CDATA[
+     <div>           <div><div >Flights</div> <div>0</div></div>
+           <div><div >Flights with anomalies</div> <div>0</div></div>
+           <div><div >Anomalies</div> <div>0 </div></div>
+           <div><div >Percentage of anomalies</div> <div> NaN %</div></div>
+           <div><div >Start time</div> <div>15-10-2025 22:25:00 (UTC)</div></div>
+       </div>
+]]></description>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+           <altitudeMode>relativeToGround</altitudeMode>
+            <coordinates>13.77534598693446,55.589923489445404,50 14.434125808225973,56.441252183891734,50 14.389162176401442,56.667299625872595,50 13.678249146602306,57.390990501529494,50 13.686920235522809,57.61957525089084,50 14.004593002490182,57.62309058280649,50 14.065899412724345,57.37980351609781,50 14.823090582806481,56.595406997509784,50 13.77534598693446,55.589923489445404,50</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+ <Placemark id="adsb-cluster-587">
+      <name>Jamming Area</name>
+      <styleUrl>#clusterStyle</styleUrl>
+      <description>  <![CDATA[
+     <div>           <div><div >Flights</div> <div>0</div></div>
+           <div><div >Flights with anomalies</div> <div>0</div></div>
+           <div><div >Anomalies</div> <div>0 </div></div>
+           <div><div >Percentage of anomalies</div> <div> NaN %</div></div>
+           <div><div >Start time</div> <div>16-10-2025 01:50:00 (UTC)</div></div>
+       </div>
+]]></description>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+           <altitudeMode>relativeToGround</altitudeMode>
+            <coordinates>13.577736923893797,58.68690773704688,50 13.28548268377961,58.96495209829149,50 12.790677330866854,58.977493085741244,50 12.777493085741247,59.10932266913316,50 13.065031529292582,59.025,50 13.804752655509546,59.023893212735516,50 14.123893212735519,58.80475265550953,50 13.904752655509544,58.67610678726449,50 13.577736923893797,58.68690773704688,50</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+ <Placemark id="adsb-cluster-595">
+      <name>Jamming Area</name>
+      <styleUrl>#clusterStyle</styleUrl>
+      <description>  <![CDATA[
+     <div>           <div><div >Flights</div> <div>0</div></div>
+           <div><div >Flights with anomalies</div> <div>0</div></div>
+           <div><div >Anomalies</div> <div>0 </div></div>
+           <div><div >Percentage of anomalies</div> <div> NaN %</div></div>
+           <div><div >Start time</div> <div>16-10-2025 05:05:00 (UTC)</div></div>
+       </div>
+]]></description>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+           <altitudeMode>relativeToGround</altitudeMode>
+            <coordinates>14.977996068034257,55.09521667333895,50 15.115572590030201,55.51216144101978,50 15.183608398664793,56.10678962358207,50 15.815763020170602,56.68234919593543,50 16.085247948539173,57.409857005651595,50 17.139218965861595,58.174574304920924,50 17.49014299434841,58.51475205146083,50 17.6098570056516,58.514752051460825,50 17.81639160133521,58.30678962358206,50 17.91475205146083,57.69014299434841,50 16.74678304950516,56.5617127408947,50 16.58341683302675,56.317217919888236,50 16.416391601335214,55.79321037641795,50 16.26978456244514,55.634429223385816,50 15.60678962358203,55.283608398664775,50 14.977996068034257,55.09521667333895,50</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+ <Placemark id="adsb-cluster-610">
+      <name>Jamming Area</name>
+      <styleUrl>#clusterStyle</styleUrl>
+      <description>  <![CDATA[
+     <div>           <div><div >Flights</div> <div>0</div></div>
+           <div><div >Flights with anomalies</div> <div>0</div></div>
+           <div><div >Anomalies</div> <div>0 </div></div>
+           <div><div >Percentage of anomalies</div> <div> NaN %</div></div>
+           <div><div >Start time</div> <div>16-10-2025 20:15:00 (UTC)</div></div>
+       </div>
+]]></description>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+           <altitudeMode>relativeToGround</altitudeMode>
+            <coordinates>16.880377006468155,56.58426765447252,50 16.77943855474271,56.71373871848566,50 17.213738718485658,57.12056144525729,50 17.220561445257292,56.886261281514344,50 16.880377006468155,56.58426765447252,50</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+ <Placemark id="adsb-cluster-614">
+      <name>Jamming Area</name>
+      <styleUrl>#clusterStyle</styleUrl>
+      <description>  <![CDATA[
+     <div>           <div><div >Flights</div> <div>0</div></div>
+           <div><div >Flights with anomalies</div> <div>0</div></div>
+           <div><div >Anomalies</div> <div>0 </div></div>
+           <div><div >Percentage of anomalies</div> <div> NaN %</div></div>
+           <div><div >Start time</div> <div>17-10-2025 02:35:00 (UTC)</div></div>
+       </div>
+]]></description>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+           <altitudeMode>relativeToGround</altitudeMode>
+            <coordinates>12.379543296181518,53.98510136475916,50 12.175860016035108,54.19519825864103,50 12.290581045509658,54.32273936767398,50 12.6,54.26849242404918,50 12.804801741358956,54.32413998396489,50 12.922739367673978,54.209418954490346,50 12.379543296181518,53.98510136475916,50</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+ <Placemark id="adsb-cluster-616">
+      <name>Jamming Area</name>
+      <styleUrl>#clusterStyle</styleUrl>
+      <description>  <![CDATA[
+     <div>           <div><div >Flights</div> <div>0</div></div>
+           <div><div >Flights with anomalies</div> <div>0</div></div>
+           <div><div >Anomalies</div> <div>0 </div></div>
+           <div><div >Percentage of anomalies</div> <div> NaN %</div></div>
+           <div><div >Start time</div> <div>17-10-2025 04:35:00 (UTC)</div></div>
+       </div>
+]]></description>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+           <altitudeMode>relativeToGround</altitudeMode>
+            <coordinates>17.475,58.003537133183414,50 17.410732972695236,58.15391168824544,50 17.277224870262145,58.190566232377776,50 17.290566232377785,58.522775129737866,50 17.41369570781714,58.520497075242915,50 17.622775129737857,58.309433767622224,50 17.622775129737857,58.090566232377775,50 17.475,58.003537133183414,50</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
 
                   </Document>
                 </kml>
